@@ -33,7 +33,7 @@ public class Main {
         do{
             System.out.println("Enter Current Price for Gallon of Gas: ");
             ppgg = scan.nextLine();
-            if(ppgg.matches("\\d+")){
+            if(ppgg.matches("\\d+(\\.\\d+)?")){
                 ppg = Double.parseDouble(ppgg);
             } else{
                 System.out.println("You have entered an invalid value for the price per gallon of gas. Please try again.");
